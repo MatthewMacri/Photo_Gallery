@@ -1,9 +1,16 @@
+/* Background */
+html, body {
+    background-color: black;
+    color: white;
+}
+
 /* Main */
 main {
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
+    background-color: black;
 }
 
 /* Picture Buttons */
@@ -11,6 +18,10 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+}
+
+.nav-bar li:hover{
+    background-color: aquamarine;
 }
 
 .nav-bar ul {
@@ -24,13 +35,51 @@ main {
 .nav-bar li {
     display: flex;
     flex-direction: column;
-    width: 80px;
-    border: 1px solid #ccc;
-    padding: 10px;
+    width: 100px;
+    border: 1px solid #737373;
+    padding: 4px;
     text-align: center;
 }
 
 .nav-bar li img {
     width: 100%;
     height: auto;
+}
+
+.picturePopUp {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.picturePopUp img {
+    padding: 10px;
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.picturePopUp .displayed-image {
+    display: none;
+}
+
+/* Show the corresponding image on hover of each nav-bar li */
+.nav-bar li:nth-child(1):hover ~ .picturePopUp .img1 {
+    display: block;
+}
+
+.nav-bar li:nth-child(2):hover ~ .picturePopUp .img2 {
+    display: block;
+}
+
+.nav-bar li:nth-child(3):hover ~ .picturePopUp .img3 {
+    display: block;
+}
+
+.nav-bar li:nth-child(4):hover ~ .picturePopUp .img4 {
+    display: block;
+}
+
+.nav-bar li:nth-child(5):hover ~ .picturePopUp .img5 {
+    display: block;
 }
