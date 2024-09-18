@@ -1,0 +1,36 @@
+/* Main */
+main {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Picture Buttons */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-bar li {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-bar li img {
+    width: 100%;
+    height: auto;
+}
