@@ -9,35 +9,38 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <main class="center-content"></main>
-        <section class="nav-bar">
-            <ul>
-                <li>
-                    <img src='Assets/img1.jpg' alt='Image 1' class="trigger-image" onmouseover="displayImage('Assets/img1.jpg')">
-                </li>
-                <li>
-                    <img src='Assets/img2.jpg' alt='Image 2' onmouseover="displayImage('Assets/img2.jpg')">
-                </li>
-                <li>
-                    <img src='Assets/img3.jpg' alt='Image 3' onmouseover="displayImage('Assets/img3.jpg')">
-                </li>
-                <li>
-                    <img src='Assets/img4.jpg' alt='Image 4' onmouseover="displayImage('Assets/img4.jpg')">
-                </li>
-                <li>
-                    <img src='Assets/img5.jpg' alt='Image 5' onmouseover="displayImage('Assets/img5.jpg')">
-                </li>
-            </ul>
-        </section>
-        <section class="picturePopUp">
-            <img id="displayedImage" src="" alt="Click an image to display here" />
-        </section>
-    </main>
-    <script>
-        function displayImage(imageSrc) {
-            const displaySection = document.getElementById('displayedImage');
-            displaySection.src = imageSrc;
-        }
-    </script>
+        <h1>Photo Gallery</h1>
+        <div class="nav-bar">
+            <div class="picture">
+                <img src='Assets/img1.jpg' type="Image 1">
+                <div class="preview">
+                    <img src='Assets/img1.jpg' type="Preview 1">
+                </div>
+            </div>
+            <div class="picture">
+                <img src='Assets/img2.jpg' type="Image 2">
+                <div class="preview">
+                    <img src='Assets/img2.jpg' type="Preview 2">
+                </div>
+            </div>
+            <div class="picture">
+                <img src='Assets/img3.jpg' type="Image 3">
+                <div class="preview">
+                    <img src='Assets/img3.jpg' type="Preview 3">
+                </div>
+            </div>
+            <div class="picture">
+                <img src='Assets/img4.jpg' type="Image 4">
+                <div class="preview">
+                    <img src='Assets/img4.jpg' type="Preview 4">
+                </div>
+            </div>
+            <div class="picture">
+                <img src='Assets/img5.jpg' type="Image 5">
+                <div class="preview">
+                    <img src='Assets/img5.jpg' type="Preview 5">
+                </div>
+            </div>
+        </div>
 </body>
 </html>
